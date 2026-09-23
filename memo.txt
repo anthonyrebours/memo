@@ -1,0 +1,36 @@
+# Git
+git init => initialise repo Git vide
+git add "file" => tracker un fichier ou dossier
+git status -sb => état court
+git diff --staged => voir ce qui va être commité
+git log --oneline --graph --decorate -20 => historique lisible
+git switch -c nom => créer et changer de branche
+git switch - => revenir à la branche précédente
+git restore --staged fichier => retirer un fichier de l'index
+git restore fichier => annuler les modifs d'un fichier
+git commit --amend --no-edit => ajouter les modifs au dernier commit
+git commit -m "message" => ajouter un message au commit
+git reset --soft HEAD~1 => annuler le dernier commit en gardant les modifs
+git stash  /  git stash pop => mettre de côté / récupérer
+git pull --rebase => récupérer sans commit de merge
+git branch -d nom => supprimer une branche fusionnée
+git reflog => retrouver un commit "perdu"
+
+# PowerShell
+Get-ChildItem -Recurse -Filter *.R => lister des fichiers récursivement (alias ls, gci)
+Get-ChildItem -Recurse *.R | Select-String "mot" => chercher un mot dans des fichiers
+Get-Content fichier -Tail 20 -Wait => suivre la fin d'un fichier (comme tail -f)
+Get-Command *git* => retrouver une commande par un bout de nom
+Get-Help commande -Examples => exemples d'une commande
+Remove-Item dossier -Recurse -Force => supprimer un dossier
+Get-Process | Where-Object CPU -gt 100 => processus gourmands
+Stop-Process -Name nom -Force => tuer un processus
+$env:PATH -split ";" => afficher le PATH ligne par ligne
+explorer . => ouvrir le dossier courant dans l'Explorateur
+
+# Positron
+Ctrl+P => ouvrir un fichier par son nom
+Ctrl+D => sélectionner l'occurrence suivante (multi-curseur)
+Alt+Haut / Alt+Bas => déplacer la ligne
+Ctrl+Shift+K => supprimer la ligne
+F2 => renommer un symbole partout
