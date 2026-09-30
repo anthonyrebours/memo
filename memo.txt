@@ -1,6 +1,9 @@
 # Git
 git init => initialise repo Git vide
 git add "file" => tracker un fichier ou dossier
+git remote add origin "git@github" => remote pointant vers repository 
+git branch -M main => renomme "master" en "main"
+git push -u origin main => pousse les changements vers la branche main
 git status -sb => état court
 git diff --staged => voir ce qui va être commité
 git log --oneline --graph --decorate -20 => historique lisible
@@ -27,6 +30,8 @@ Get-Process | Where-Object CPU -gt 100 => processus gourmands
 Stop-Process -Name nom -Force => tuer un processus
 $env:PATH -split ";" => afficher le PATH ligne par ligne
 explorer . => ouvrir le dossier courant dans l'Explorateur
+winget list --upgrade-available  => vérifier mises à jour disponibles
+
 
 # Positron
 Ctrl+P => ouvrir un fichier par son nom
