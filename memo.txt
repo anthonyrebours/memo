@@ -1,3 +1,6 @@
+# R code
+ls("package:dplyr") => liste les fonctions d'un package si chargé
+
 # Git
 git init => initialise repo Git vide
 git add "file" => tracker un fichier ou dossier
